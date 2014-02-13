@@ -1,0 +1,14 @@
+## Name of the node
+-name erlhttp_bench@127.0.0.1
+
+## Cookie for distributed erlang
+-setcookie erlhttp_bench
+
+## Enable kernel poll and a few async threads
++K true
++A 128
+
++spp true
+
+## Increase number of concurrent ports/sockets
+-env ERL_MAX_PORTS 4096
