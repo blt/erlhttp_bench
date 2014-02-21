@@ -11,6 +11,8 @@ compile: deps
 
 clean:
 	@$(REBAR) clean
+	-rm -rf deps
+	-rm -rf _rel
 
 release: clean compile
 	@$(RELX) release tar
